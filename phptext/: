@@ -1,0 +1,19 @@
+<?php
+
+$str = "こんにちわ";
+$length = strlen($str);
+$mb_length = mb_strlen($str);
+
+$string ="ABCDEFGHIJKLMN";
+$result = substr($string,3,5);
+
+$html ='<div style="font-size:12px;">Hello</div><br>';
+$search = '12px';
+$replace = '48px';
+$result1 = str_replace($search,$replace,$html);
+//echo $result1;
+echo"<br>";
+echo $mb_length;
+echo"<br>";
+echo $result;
+?>
